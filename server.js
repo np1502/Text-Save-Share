@@ -14,7 +14,7 @@ mongoose.connect("mongodb://localhost/textshare", {
 app.get("/", (req, res) => {
   const code = `Welcome to TextShare!
 
-Use the buttons in the top right corner
+Use the buttons in the bottom right corner
 to create a new file to share with others.`
 
   res.render("code-display", { code, language: "plaintext" })
